@@ -1,0 +1,24 @@
+Features in Detail:
+	1.	Add A New Task:
+	•	Users can enter a task using getline() for multi-word tasks.
+	•	The program checks if the task list has reached its maximum capacity before adding a new task.
+	2.	View Tasks:
+	•	All tasks are displayed in a numbered list format.
+	•	If no tasks are available, an appropriate message is shown.
+	3.	Delete Task:
+	•	The user is prompted to enter the task number for deletion.
+	•	Input validation ensures the task number is within the valid range.
+	•	Tasks are shifted in the array to fill the gap left by the deleted task.
+	4.	Input Handling:
+	•	cin.ignore() clears the input buffer to handle line breaks effectively.
+	•	Error messages are displayed for invalid menu choices or invalid task numbers.
+Key Advantages:
+	•	Simple Interface: Easy-to-understand menu-driven approach.
+	•	Robust Handling: Clear messages for invalid inputs and error scenarios.
+	•	Efficient Memory Usage: Fixed array size ensures limited resource usage.
+	•	Educational Example: Great for beginners learning array manipulation and menu-based programming.
+Potential Enhancements:
+	•	Allow dynamic resizing of the task list using std::vector.
+	•	Save and load tasks from a file for persistent storage.
+	•	Add the ability to mark tasks as completed.
+This program is a foundational implementation and can be expanded upon as needed!
