@@ -1,0 +1,76 @@
+Calculator 
+Title: Simple Calculator
+
+Objective:
+The goal is to create a basic C++ calculator that can carry out simple arithmetic operations. 
+In line with the objectives of the CodSoft internship, this work exhibits mastery of programming principles like conditional statements, control structures, and user input handling
+
+Clear description 
+Description: The Simple Calculator program allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The program takes two numbers as input and an operator to specify the desired operation. The result is displayed based on the selected operation.
+Addition, subtraction, multiplication, and division are among the fundamental arithmetic operations that can be carried out by users of the Simple Calculator program. Two integers are entered into the program, and an operator is used to specify the intended operation. Depending on the procedure chosen, the outcome is shown.
+
+Key Features:
+	1.	Arithmetic Operations:
+	•	Addition (+): Adding two numbers together
+	•	Subtraction (-): Takes the first number and subtracts the second.
+	•	Multiplication (*): Multiplies two numbers.
+	•	Division (/): Divides the first number by the second, with error handling for division by zero.
+	2.	Error Handling:
+	•	Prevents division by zero with an appropriate error message.
+	•	Validates user inputs to ensure correct program functionality.
+	3.	Repeat Functionality:
+	•	Offers the user the option to perform another calculation or exit the program.
+	•	Allows users to perform multiple calculations until they choose to exit.
+
+User Input Handling:
+	•	Accepts two numbers from the user.
+	•	Accepts an operator to specify the calculation.
+
+Switch-Case Control:
+	•	Uses the switch-case statement to determine the operation based on the operator entered by the user.
+
+
+Important attributes: Arithmetic operations include: * Adding two numbers together (+). * Subtraction (-): Takes the first number and subtracts the second. Two numbers are multiplied by * multiplication (*). * Division (/), which handles division by zero, divides the first number by the second. 2. Error Handling: * Verifies user inputs to guarantee proper program functionality; * Prevents division by zero with a suitable error message. 3. Repeat Functionality: * Gives the user the choice to continue calculating or to quit the application; * Lets users continue calculating until they decide to stop. Handling User Input: * Takes two integers from the user. allows you to specify the calculation with an operator. Switch-Case Control: * Determines the operation based on the operator the user enters using the switch-case statement. 
+Important Ideas Exhibited: * Effective branching with switch statements
+
+Key Concepts Demonstrated:
+	•	Efficient branching using switch statements for operator handling.
+	•	Basic input and output operations using cin and cout.
+	•	Error handling for invalid operators and division by zero.
+	•	Looping with a do-while construct to allow repeated calculations.
+
+
+Instructions for Use:
+
+Compilation: Compile the program using a C++ compiler. For example, you can use g++ on Unix-like systems or MinGW on Windows.
+
+Copy code
+g++ -o calculator calculator.cpp
+Execution: Run the compiled executable.
+
+bash
+Copy code
+./calculator
+Usage: Follow the instructions displayed on the screen to input mathematical expressions.
+
+
+	•	Enter two numbers when prompted.
+	•	Choose an operation by entering the corresponding symbol (+, -, *, /).
+	•	View the result displayed by the program.
+	•	Repeat the process if desired, or exit the program.
+	•	Enter a mathematical expression when prompted. 
+	•	Press Enter to evaluate the expression.
+	•	The result of the expression will be displayed.
+
+
+Gameplay Steps:
+	•	Input the first number, operator (+, -, *, /), and second number.
+	•	View the result or an error message if applicable.
+	•	Decide whether to perform another calculation.
+
+Program Workflow:
+	1.	Prompt the user to input two numbers.
+	2.	Ask the user to select an operation (+, -, *, /).
+	3.	Perform the selected operation using appropriate conditional statements (if-else or switch).
+	4.	Display the result of the operation.
+	5.	Handle invalid operations or division by zero gracefully.
