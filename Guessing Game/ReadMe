@@ -56,7 +56,3 @@ Structure of Code:
    Give feedback after comparing the input to the generated value.
 3. Outcome Display:  If all tries are made, reveal the number or congratulate the participant on a correct guess.
 
-*Additional Notes:*  
--To guarantee that a new number is produced with every iteration, the random number generator is seeded using the current time.  
-- The application makes the game easy to use by providing feedback and simple instructions.  
-- When the right number is guessed or all five attempts have been made, the game is over.  
