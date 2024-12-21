@@ -3,83 +3,94 @@
 
 using namespace std;
 
-// Maximum capacity for tasks
-const int maximum_tasks = 10;
+void print_task(string task[], int task_count)
+{
+    cout << "Task to Do: " << endl;
+    cout << "----------------------------------------" << endl;
+    for (int i = 0; i < task_count; i++)
+    {
+        cout << "Task " << i + 1 << " : " << task[i] << endl;
+    }
+    cout << "----------------------------------------" << endl;
+}
 
-int main() {
-    string tasks[maximum_tasks ]; // Array to hold tasks
-    int taskCount = 0;       // Counter for current number of tasks
-    int choice;              // User's menu choice
+int main()
+{
+    string tasks[10]; 
 
-    do {
-        // Display menu
-        cout << "\n=== Simple To-Do List Management ===" << endl;
-        cout << "1. Add A New Task" << endl;
-        cout << "2. View All Tasks" << endl;
-        cout << "3. Delete A Task" << endl;
-        cout << "0. Exit" << endl;
-        cout << "Enter Your Choice: ";
-        cin >> choice;
-
-        // Menu options
-        switch (choice) {
-            case 1: { // Add a new task
-                if (taskCount < maximum_tasks ) {
-                    cout << "Enter the task: ";
-                    cin.ignore(); // Clear the input buffer
-                    getline(cin, tasks[taskCount]); // Read the task
-                    taskCount++;
-                    cout << "Task added successfully!" << endl;
-                } else {
-                    cout << "Task list is full. Cannot add more tasks." << endl;
-                }
-                break;
+    int task_count = 0; // Counter for current number of task
+    int chosen  = -1;
+    while (chosen != 0) // The menu will be be using a while loop
+    {
+        cout << "------Welcome To The Do List------" << endl; // Display Menu 
+        cout << "1 --- Add A New Task ---" << endl;
+        cout << "2 --- View The Tasks ---" << endl;
+        cout << "3 --- Delete A Task ---" << endl;
+        cout << "0 --- Exit ---" << endl;
+        cin >> chosen;
+        switch (chosen)
+        {
+        case 1:
+        {
+            if (task_count > 9)
+            {
+                cout << "Task List Is Full. You cant add a new task" << endl;
             }
-
-            case 2: { // View all tasks
-                if (taskCount == 0) {
+            else
+            {
+                cout << "Enter New Task: ";
+                cin.ignore(); // Added cin.ignore() to clear the input buffer
+                getline(cin, tasks[task_count]); 
+                task_count++;
+                 cout << "Task added successfully!" << endl;
+            }
+            break;
+        }
+        case 2:
+            system("cls");
+            print_task(tasks, task_count);
+            if (task_count == 0) {
                     cout << "No tasks in the list." << endl;
                 } else {
-                    cout << "\n=== Current Tasks ===" << endl;
-                    for (int i = 0; i < taskCount; ++i) {
+                    cout << "\n=== The Tasks Are ===" << endl;
+                    for (int i = 0; i < task_count; ++i) {
                         cout << i + 1 << ". " << tasks[i] << endl;
                     }
                 }
-                break;
-            }
+            break;
+    
 
-            case 3: { // Delete a task
-                if (taskCount == 0) {
-                    cout << "No tasks to delete." << endl;
+        case 3:
+        {
+           if (task_count == 0) {
+                    cout << "No Tasks To Be Delete." << endl;
                 } else {
-                    int taskIndex;
-                    cout << "Enter the task number to delete: ";
-                    cin >> taskIndex;
+                    int deleteTask;
+                    cout << "Enter The Task Number That You Want To Delete: ";
+                    cin >> deleteTask;
 
-                    if (taskIndex > 0 && taskIndex <= taskCount) {
-                        // Shift tasks to fill the gap
-                        for (int i = taskIndex - 1; i < taskCount - 1; ++i) {
+                    if (deleteTask > 0 && deleteTask<= task_count) {
+                       
+                        for (int i = deleteTask - 1; i < task_count - 1; ++i) {
                             tasks[i] = tasks[i + 1];
                         }
-                        taskCount--; // Reduce task count
+                        task_count--; // Reduce task count
                         cout << "Task deleted successfully!" << endl;
                     } else {
                         cout << "Invalid task number. Please try again." << endl;
                     }
                 }
+                    }
                 break;
-            }
+        
+        case 0:
+            cout << "\n\t\t-------------------END PROGRAM-----------------" << endl;
+            break;
 
-            case 0: // Exit the program
-                cout << "Exiting program. Goodbye!" << endl;
-                break;
-
-            default: // Invalid choice
-                cout << "Invalid choice. Please try again." << endl;
+        default:
+            cout << "Invalid Value" << endl;
         }
-    } while (choice != 0);
+    }
 
     return 0;
 }
-
-
