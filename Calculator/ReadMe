@@ -26,8 +26,20 @@ Switch-Case Control:
 	•	Uses the switch-case statement to determine the operation based on the operator entered by the user.
 
 
-Important attributes: Arithmetic operations include: * Adding two numbers together (+). * Subtraction (-): Takes the first number and subtracts the second. Two numbers are multiplied by * multiplication (*). * Division (/), which handles division by zero, divides the first number by the second. 2. Error Handling: * Verifies user inputs to guarantee proper program functionality; * Prevents division by zero with a suitable error message. 3. Repeat Functionality: * Gives the user the choice to continue calculating or to quit the application; * Lets users continue calculating until they decide to stop. Handling User Input: * Takes two integers from the user. allows you to specify the calculation with an operator. Switch-Case Control: * Determines the operation based on the operator the user enters using the switch-case statement. 
-Important Ideas Exhibited: * Effective branching with switch statements
+Important attributes: 
+Arithmetic operations include: * Adding two numbers together (+). * 
+Subtraction (-): Takes the first number and subtracts the second. 
+Two numbers are multiplied by * multiplication (*). 
+Division (/), which handles division by zero, divides the first number by the second.
+2. Error Handling: * Verifies user inputs to guarantee proper program functionality; 
+* Prevents division by zero with a suitable error message. 
+3. Repeat Functionality: * Gives the user the choice to continue calculating or to quit the application; * 
+Lets users continue calculating until they decide to stop. Handling User Input: 
+* Takes two integers from the user. allows you to specify the calculation with an operator. 
+Switch-Case Control: Determines the operation based on the operator the user enters using the switch-case statement. 
+
+Important Ideas Exhibited: 
+* Effective branching with switch statements
 
 Key Concepts Demonstrated:
 	•	Efficient branching using switch statements for operator handling.
