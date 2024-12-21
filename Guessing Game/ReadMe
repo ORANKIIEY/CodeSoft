@@ -3,12 +3,13 @@ Guessing game C++
 Title:Orankiiey’s Guessing Game  
 
 *Description:*  
-This C++ program is a fun and straightforward number guessing game. 
-The objective is to guess a randomly generated number between 1 and 100. Players have a maximum of 5 attempts to guess the correct number. 
-After each guess, the program provides feedback, indicating if the guess was too high or too low. If the player guesses correctly within the allotted attempts, they win; otherwise, they lose, and the correct number is revealed.  
+This is a simple and entertaining number guessing game written in C++. 
+Guessing a randomly generated number between 1 and 100 is the goal. Gamers are allowed to estimate the right number up to five times. 
+The software indicates whether a guess was too high or too low after each one. The player wins if their guess is accurate within the given number of tries; 
+if not, they lose and the correct number is revealed. 
 
 *Features:*  
-1. Random Number Generation: This feature allows the player to guess a random number between 1 and 100.  
+1. Random Number Generation: The player can guess a random number between 1 and 100 using this feature.  
 2. Limited Attempts: Players may predict the number no more than five times.  
 3. User Input Handling: Provides feedback while accepting and verifying user input.  
 4. Guess Feedback: After every try, the player is notified if their guess was too high or too low.  
@@ -28,15 +29,15 @@ After each guess, the program provides feedback, indicating if the guess was too
      
 
 3. *Gameplay:*  
-   - Follow on-screen instructions to play.  
-   - Guess a number between 1 and 100.  
-   - You have 5 attempts to guess correctly.  
-   - After each guess, feedback is provided: "too high" or "too low."  
-   - If you guess the number within 5 tries, you win. Otherwise, you lose, and the correct number is displayed. You have 5 attempts to find the correct number.
+   To play, adhere to the on-screen directions.  
+   Choose a number between 1 and 100 by guessing.  
+   - You have five chances to get it right.  
+   - Each guess is followed by the comments "too high" or "too low."  
+   You win if you correctly predict the number five times. If not, the right number is shown and you lose. You have five chances to figure out the right number.
 
 *Dependencies:*  
-This program uses the iostream, cstdlib, and ctime libraries from the C++ Standard Library.  
-	•	Uses the following libraries from the C++ Standard Library:
+The C++ Standard Library's iostream, cstdlib, and ctime libraries are used in this application.
+Makes use of the following C++ Standard Library libraries:
 	•	iostream for input and output.
 	•	cstdlib for random number generation.
 	•	ctime to seed the random number generator.
@@ -49,8 +50,8 @@ Key Concepts Demonstrated:
 
 
 Structure of Code:
-1. Initialization: The current time was used to seed the random number generator.
-   Choose a random number from 1 to 100.
+1. Initialization: The random number generator was seeded with the current time.
+   Pick a random number between 1 and 100.
 2. Game Loop:  Permit up to five guesses to be entered by the player.
    Give feedback after comparing the input to the generated value.
 3. Outcome Display:  If all tries are made, reveal the number or congratulate the participant on a correct guess.
