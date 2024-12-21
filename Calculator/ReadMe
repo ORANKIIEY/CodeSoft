@@ -1,13 +1,9 @@
 Calculator 
 Title: Simple Calculator
 
-Objective:
-The goal is to create a basic C++ calculator that can carry out simple arithmetic operations. 
-In line with the objectives of the CodSoft internship, this work exhibits mastery of programming principles like conditional statements, control structures, and user input handling
 
-Clear description 
-Description: The Simple Calculator program allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The program takes two numbers as input and an operator to specify the desired operation. The result is displayed based on the selected operation.
-Addition, subtraction, multiplication, and division are among the fundamental arithmetic operations that can be carried out by users of the Simple Calculator program. Two integers are entered into the program, and an operator is used to specify the intended operation. Depending on the procedure chosen, the outcome is shown.
+Description: Users of the Simple Calculator program can do basic arithmetic operations, including addition, subtraction, multiplication, and division. An operator is used to define the intended operation once two integers are entered into the program. 
+The result is displayed based on the method selected.
 
 Key Features:
 	1.	Arithmetic Operations:
