@@ -2,6 +2,7 @@ Description:
 
 Users can add, examine, and remove tasks from a list using this simple C++ to-do list management tool. For simple interaction, it offers a menu-driven interface. It ensures the task list does not exceed the maximum capacity of 10 tasks
 
+
 Features:
 
 Add A New Task: The to-do list allows users to add new tasks. The application makes sure the task list doesn't go over its allotted space. View The Tasks: All of the tasks that are now listed are visible to users. Delete Task: By inputting the relevant index, users can remove a particular task from the list.
@@ -10,13 +11,6 @@ Instructions for Use:
 
 Compilation: Compile the program using a C++ compiler. For example, you can use g++ on Unix-like systems or MinGW on Windows.
 
-Copy code
-g++ -o todo_list todo_list.cpp
-Execution: Run the compiled executable.
-
-bash
-Copy code
-./todo_list
 Menu Navigation: Follow the on-screen menu to perform desired operations.
 
 Enter 1 to add a new task.
@@ -27,10 +21,7 @@ Dependencies:
 
 This program utilizes the iostream and string libraries from the C++ Standard Library.
 
-Additional Information: Strong input handling is guaranteed by the program, which also provides the required error messages for user input that is not legitimate. In order to avoid unexpected behaviour, the input buffer is appropriately cleared. Ten jobs is the maximum capacity of the task list, which guarantees memory efficiency. When a task is deleted, the task count is updated appropriately, preserving the list's integrity.
-
-
-
+Strong input handling is guaranteed by the program, which also provides the required error messages for user input that is not legitimate. In order to avoid unexpected behaviour, the input buffer is appropriately cleared. Ten jobs is the maximum capacity of the task list, which guarantees memory efficiency. When a task is deleted, the task count is updated appropriately, preserving the list's integrity.
 
 Features in Detail:
 1. Add A New Task: For multi-word tasks, users can use getline() to enter a task.
